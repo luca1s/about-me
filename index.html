@@ -15,27 +15,90 @@
 
 <body>
     <div class="px-4 py-5 my-5 text-center">
-        <img class="d-block mx-auto mb-4" src="pfp.jpg" alt="" width="150">
-        <span style="font-size: xx-small;">Credit: Tess S.</span>
-        <h1 class="display-5 fw-bold"><a href="https://github.com/luca1s" class="fa fa-github text-decoration-none"></a> luca1s</h1>
+        <img class="d-block mx-auto mb-4" src="pfp.jpg" alt="" width="250">
+        <h1 class="display-5 fw-bold"><a href="https://github.com/luca1s" class="fa fa-github text-decoration-none"></a>
+            luca1s</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Highschool student, developer and student pilot. Primarily working on web development,
-                5 years of HTML, CSS and JS.</p>
-            <div class="col d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">OuiChat</h5>
-                        <p class="card-text">Messaging app (PWA) using Firebase + NodeJS for notifications (currently unavailable due to Heroku discontinuing the free plan).</p>
-                        <p class="card-text"><b>Status: Completed</b></p>
-                        <a href="https://ouichat.luca1s.tech/index.html" class="card-link">Try it</a>
+            <p class="lead mb-4">Highschool student, developer and student pilot. Primarily working on web development
+            </p>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">StudyState</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Primary project</h6>
+                    <div id="studystate-carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./studystate/1.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./studystate/2.png" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./studystate/3.png" class="d-block w-100">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#studystate-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#studystate-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
+                    <p class="card-text">Built as a free alternative to Quizlet to avoid needing to pay for Quizlet Plus
+                        to use Learn and Test features. </p>
+                        <div class="d-flex justify-content-center">
+                            <img height="50" src="./studystate/logos/cra.svg" />
+                            <img height="50" src="./studystate/logos/mui.png" />
+                            <img height="50" src="./studystate/logos/react.png" />
+                            <img height="50" src="./studystate/logos/firebase.svg" />
+                        </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">OpenCanvas</h5>
-                        <p class="card-text">An open canvas, intended for project management or just as a whiteboard</p>
-                        <p class="card-text"><b>Status: WIP</b></p>
-                        <a href="https://opencanvas.netlify.app" class="card-link">Try it</a>
+            </div>
+            <br>
+            <div class="accordion accordion-flush" id="vanilla-projects">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="vanillaHeading">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#accordion-vanillaProj" aria-expanded="false"
+                            aria-controls="accordion-vanillaProj">
+                            Vanilla HTML, JS, CSS
+                        </button>
+                    </h2>
+                    <div id="accordion-vanillaProj" class="accordion-collapse collapse" aria-labelledby="vanillaHeading"
+                        data-bs-parent="#vanillaFlushAccordion">
+                        <div class="accordion-body">
+                            <div class="col d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">OuiChat</h5>
+                                        <p class="card-text">Messaging app (PWA) using Firebase (RTDB/Auth) + Bootstrap
+                                            + NodeJS for
+                                            notifications
+                                            (currently unavailable due to Heroku discontinuing the free plan).
+                                        </p>
+                                        <p class="card-text"><b>Status: Completed</b></p>
+                                        <a href="https://ouichat.luca1s.tech/index.html" class="card-link">Try
+                                            it</a>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">OpenCanvas</h5>
+                                        <p class="card-text">An open canvas, intended for project management or
+                                            just as
+                                            a whiteboard.
+                                            Built using Firestore/Firebase Auth + Bootstrap + MDB
+                                        </p>
+                                        <p class="card-text"><b>Status: Completed</b></p>
+                                        <a href="https://opencanvas.netlify.app" class="card-link">Try it</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
