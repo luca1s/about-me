@@ -10,6 +10,8 @@
   import studystate from "./images/studystate.png";
   import ouichat from "./images/ouichat.png";
   import aboutme from "./images/aboutme.png";
+  import Project from "./Project.svelte";
+  import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
 
   const technologies = [firebase, js, mui, react, svelte, bootstrap];
   const projects = [
@@ -28,7 +30,7 @@
       status: "Active",
       description:
         "This website, a showcase of my projects and technical capabilities. This site was also my first forray into Svelte as a React developer",
-      technologies: [svelte],
+      technologies: [svelte, js],
       thumbnail: aboutme,
       link: "https://luca1s.tech",
     },
@@ -45,7 +47,7 @@
       name: "OuiChat",
       status: "Finished - Abandoned",
       description:
-        "A chat app created using vanilla JS, Firebase annd Bootstrap",
+        "A chat app created using vanilla JS, Firebase and Bootstrap",
       thumbnail: ouichat,
       technologies: [firebase, js, bootstrap],
       link: "https://ouichat.luca1s.tech",
@@ -55,8 +57,21 @@
 
 <main style="margin-top: 1rem; margin-bottom: 1rem;">
   <img src={pfp} width="250" alt="profile" />
-  <h1>luca1s</h1>
-  <h2>highschool student, pilot and frontend web developer</h2>
+  <div class="title-container">
+    <h1>luca1s</h1>
+    <a href="https://github.com/luca1s" class="icon">
+      <DiGithubBadge />
+    </a>
+  </div>
+  <p>
+    I'm a 16 year old frontend web developer most proficient in React.
+    Currently, I'm focused on <br />
+    building a free and lightweight alternative to Quizlet, <b>StudyState</b>. I
+    am always looking to <br />
+    improve as a developer, and I am constantly picking up new frameworks and technologies,
+    <br />
+    such as Svelte, the framework this portfolio website is built with.
+  </p>
   <div class="technologiesDiv">
     {#each technologies as technology}
       <img src={technology} class="technologyImg" alt="technology" />
@@ -64,28 +79,7 @@
   </div>
   <div id="projectsContainer">
     {#each projects as project}
-      <div
-        class="projectCard"
-        class:featured={project.featured}
-        class:default={!project.featured}
-      >
-        <h2>
-          {project.name}
-          {#if project.featured}
-            <span class="featuredSpan">Featured</span>
-          {/if}
-        </h2>
-        <p>Status: {project.status}</p>
-        {#if project.thumbnail}
-          <img src={project.thumbnail} class="thumbnail" alt="thumbnail" />
-        {/if}
-        <p>{project.description}</p>
-        {#each project.technologies as technology}
-          <img src={technology} class="technologyImg" alt="technology" />
-        {/each}
-        <br />
-        <a href={project.link}>Visit</a>
-      </div>
+      <Project {project} />
     {/each}
   </div>
 </main>
@@ -97,50 +91,34 @@
     justify-content: center;
   }
 
-  .featured {
-    border: 4px solid orange;
-  }
-
-  .default {
-    border: 1px solid rgba(128, 128, 128, 0.5);
-  }
-
-  .projectCard {
-    border-radius: 5px;
-    background-color: #242424;
-    max-width: 30vw;
-    transition: box-shadow 0.3s ease-in-out;
-    padding: 2rem;
-    margin: 10px;
-  }
-
-  .projectCard:hover {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  }
-
   .technologyImg {
     max-width: 50px;
     max-height: 50px;
     margin: 10px;
   }
 
-  .thumbnail {
-    width: 100%;
-  }
-
-  .featuredSpan {
-    color: black;
-    padding: 5px;
-    background-color: orange;
-    border-radius: 15px;
-    font-size: 0.7em;
-  }
-
   .technologiesDiv {
     display: inline-flex;
-    align-itms: center;
+    align-items: center;
     text-align: center;
     border-radius: 15px;
     border: 1px solid gray;
+  }
+
+  .icon {
+    color: white;
+    width: 2em;
+    display: inline-block;
+    height: 2em;
+  }
+
+  .icon:hover {
+    color: red;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 </style>
