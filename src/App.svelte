@@ -13,7 +13,32 @@
   import Project from "./Project.svelte";
   import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
 
-  const technologies = [firebase, js, mui, react, svelte, bootstrap];
+  const technologies = [
+    {
+      img: firebase,
+      url: "https://firebase.google.com/",
+    },
+    {
+      img: js,
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      img: mui,
+      url: "https://material-ui.com/",
+    },
+    {
+      img: react,
+      url: "https://reactjs.org/",
+    },
+    {
+      img: svelte,
+      url: "https://svelte.dev/",
+    },
+    {
+      img: bootstrap,
+      url: "https://getbootstrap.com/",
+    }
+  ];
   const projects = [
     {
       name: "StudyState",
@@ -74,7 +99,9 @@
   </p>
   <div class="technologiesDiv">
     {#each technologies as technology}
-      <img src={technology} class="technologyImg" alt="technology" />
+      <a href={technology.url} class="technologyImgContainer">
+        <img src={technology.img} class="technologyImg" alt="technology" />
+      </a>
     {/each}
   </div>
   <div id="projectsContainer">
@@ -92,9 +119,16 @@
   }
 
   .technologyImg {
-    max-width: 50px;
-    max-height: 50px;
+    height: 50px;
     margin: 10px;
+  }
+
+  .technologyImgContainer {
+    border-radius: 10px;
+  }
+
+  .technologyImgContainer:hover {
+    background-color: #f5f5f5;
   }
 
   .technologiesDiv {
