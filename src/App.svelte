@@ -80,7 +80,7 @@
   ];
 </script>
 
-<main style="margin-top: 1rem; margin-bottom: 1rem;">
+<main>
   <img src={pfp} width="250" alt="profile" />
   <div class="title-container">
     <h1>luca1s</h1>
@@ -88,14 +88,12 @@
       <DiGithubBadge />
     </a>
   </div>
-  <p>
+  <p id="bio">
     I'm a 16 year old frontend web developer most proficient in React.
-    Currently, I'm focused on <br />
-    building a free and lightweight alternative to Quizlet, <b>StudyState</b>. I
-    am always looking to <br />
-    improve as a developer, and I am constantly picking up new frameworks and technologies,
-    <br />
-    such as Svelte, the framework this portfolio website is built with.
+    Currently, I'm focused on building a free and lightweight alternative to
+    Quizlet, <b>StudyState</b>. I am always looking to improve as a developer,
+    and I am constantly picking up new frameworks and technologies, such as
+    Svelte, the framework this portfolio website is built with.
   </p>
   <div class="technologiesDiv">
     {#each technologies as technology}
@@ -112,6 +110,11 @@
 </main>
 
 <style>
+  #bio {
+    max-width: 50em;
+    margin: auto;
+  }
+
   #projectsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -154,5 +157,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  main {
+    margin-top: 1rem; 
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 </style>

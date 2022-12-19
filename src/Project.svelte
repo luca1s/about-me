@@ -37,7 +37,7 @@
     .projectCard {
         border-radius: 5px;
         background-color: #242424;
-        max-width: 30vw;
+        width: 20rem;
         transition: box-shadow 0.3s ease-in-out;
         padding: 2rem;
         margin: 10px;
