@@ -11,32 +11,44 @@
   import ouichat from "./images/ouichat.png";
   import aboutme from "./images/aboutme.png";
   import Project from "./Project.svelte";
+  import vite from './images/vite.png'
   import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
 
   const technologies = [
     {
       img: firebase,
+      name: "Firebase",
       url: "https://firebase.google.com/",
     },
     {
       img: js,
+      name: "JavaScript",
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
       img: mui,
+      name: "MUI",
       url: "https://material-ui.com/",
     },
     {
       img: react,
+      name: "React",
       url: "https://reactjs.org/",
     },
     {
       img: svelte,
+      name: "Svelte",
       url: "https://svelte.dev/",
     },
     {
       img: bootstrap,
+      name: "Bootstrap",
       url: "https://getbootstrap.com/",
+    },
+    {
+      img: vite,
+      name: "Vite",
+      url: "https://vitejs.dev/",
     }
   ];
   const projects = [
@@ -47,7 +59,7 @@
       description:
         "A website for students to create, share and study, created as a free and lightweight alternative to Quizlet.  ",
       thumbnail: studystate,
-      technologies: [firebase, js, react, mui],
+      technologies: [firebase, js, react, mui, vite],
       link: "https://studystate.net",
     },
     {
