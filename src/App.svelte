@@ -77,8 +77,7 @@
       description:
         "A collaborative whiteboard site created using vanilla JS, Firebase and Bootstrap",
       thumbnail: opencanvas,
-      technologies: [firebase, js, bootstrap],
-      link: "https://opencanvas.netlify.app",
+      technologies: [firebase, js, bootstrap]
     },
     {
       name: "OuiChat",
@@ -86,8 +85,7 @@
       description:
         "A chat app created using vanilla JS, Firebase and Bootstrap",
       thumbnail: ouichat,
-      technologies: [firebase, js, bootstrap],
-      link: "https://ouichat.luca1s.tech",
+      technologies: [firebase, js, bootstrap]
     },
   ];
 </script>

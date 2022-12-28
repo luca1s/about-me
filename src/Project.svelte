@@ -22,10 +22,22 @@
         <img src={technology} class="technologyImg" alt="technology" />
     {/each}
     <br />
-    <a href={project.link}>Visit</a>
+    {#if project.link}
+        <a href={project.link}>Visit</a>
+    {:else}
+        <p class="notAvail">No Longer Published</p>
+    {/if}
 </div>
 
 <style>
+    .notAvail {
+        color: gray;
+    }
+
+    a {
+        font-size: 1.25em;
+    }
+
     .featured {
         border: 4px solid orange;
     }
