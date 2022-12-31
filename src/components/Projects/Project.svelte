@@ -9,9 +9,6 @@
 >
     <h2>
         {project.name}
-        {#if project.featured}
-            <span class="featuredSpan">Featured</span>
-        {/if}
     </h2>
     <p>Status: {project.status}</p>
     {#if project.thumbnail}
@@ -67,13 +64,5 @@
 
     .thumbnail {
         width: 100%;
-    }
-
-    .featuredSpan {
-        color: black;
-        padding: 5px;
-        background-color: orange;
-        border-radius: 15px;
-        font-size: 0.7em;
     }
 </style>
