@@ -2,6 +2,7 @@
     import pfp from "../images/pfp.jpg";
     import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
     import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
+    import MdEmail from "svelte-icons/md/MdEmail.svelte";
 </script>
 
 <div class="flex">
@@ -19,6 +20,9 @@
             </a>
             <a href="https://www.linkedin.com/in/luca1s/" class="icon">
                 <FaLinkedin />
+            </a>
+            <a href="mailto:lucajfrancis@gmail.com" class="icon">
+                <MdEmail />
             </a>
         </div>
     </div>
@@ -60,7 +64,6 @@
     .icon {
         color: white;
         width: 3em;
-        display: inline-block;
         height: 3em;
     }
 
