@@ -6,8 +6,8 @@
 
 <div class="flex">
     <div style="text-align: left;">
-        <h1 style="font-size: 2.5rem; margin: 0px; left: 0;">Hi, I'm</h1>
-        <h1 style="font-size: 4rem; margin: 0px; left: 0; color: #4287f5;">
+        <h1 style="font-size: 2.5rem; margin: 0px;">Hi, I'm</h1>
+        <h1 class="name">
             Luc Francis
         </h1>
         <p id="bio">
@@ -31,6 +31,20 @@
 </div>
 
 <style>
+    .name {
+        font-size: 4rem;
+        margin: 0px;
+        left: 0;
+        color: #4287f5;
+    }
+
+    @media (max-width: 768px) {
+        .name {
+            font-size: 3rem;
+        }
+    }
+
+
     .flex {
         display: flex;
         align-items: center;
