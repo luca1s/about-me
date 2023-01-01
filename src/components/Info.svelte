@@ -7,9 +7,7 @@
 <div class="flex">
     <div style="text-align: left;">
         <h1 style="font-size: 2.5rem; margin: 0px;">Hi, I'm</h1>
-        <h1 class="name">
-            Luc Francis
-        </h1>
+        <h1 class="name">Luc Francis</h1>
         <p id="bio">
             I'm a 16 year old frontend web developer most proficient in React. I
             am always looking to improve as a developer, and I am constantly
@@ -19,10 +17,7 @@
             <a href="https://github.com/luca1s" class="icon">
                 <DiGithubBadge />
             </a>
-            <a
-                href="https://www.linkedin.com/in/luc-francis-34a6b6258/"
-                class="icon"
-            >
+            <a href="https://www.linkedin.com/in/luca1s/" class="icon">
                 <FaLinkedin />
             </a>
         </div>
@@ -43,7 +38,6 @@
             font-size: 2.5rem;
         }
     }
-
 
     .flex {
         display: flex;

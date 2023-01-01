@@ -10,6 +10,7 @@ import ouichat from "./images/ouichat.png";
 import vite from './images/vite.png';
 import html from './images/html.svg';
 import css from './images/css.png';
+import typesense from './images/typesense.svg';
 
 export const technologies = [
     {
@@ -56,6 +57,11 @@ export const technologies = [
         img: vite,
         name: "Vite",
         url: "https://vitejs.dev/",
+    },
+    {
+        img: typesense,
+        name: 'Typesense',
+        url: 'https://typesense.org/'
     }
 ];
 
@@ -67,7 +73,7 @@ export const projects = [
         description:
             "A website for students to create, share and study, created as a free and lightweight alternative to Quizlet.  ",
         thumbnail: studystate,
-        technologies: [firebase, react, mui, vite],
+        technologies: [firebase, react, mui, typesense],
         link: "https://studystate.net",
     },
     {
