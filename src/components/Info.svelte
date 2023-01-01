@@ -40,7 +40,7 @@
 
     @media (max-width: 768px) {
         .name {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
 
