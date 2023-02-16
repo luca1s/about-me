@@ -8,7 +8,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg}']
+        globPatterns: ['**/*.{js,css,html,png,svg,jpg}']
       }
     }),
     svelte()
