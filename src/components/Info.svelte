@@ -1,7 +1,12 @@
 <script>
+// @ts-nocheck
+
     import pfp from "../images/pfp.jpg";
     import DiGithubBadge from "svelte-icons/di/DiGithubBadge.svelte";
     import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
+
+    const diff = new Date() - new Date("2006-03-13");
+    const age = Math.floor(diff / 31536000000);
 </script>
 
 <div class="flex">
@@ -9,7 +14,7 @@
         <h1 style="font-size: 2.5rem; margin: 0px;">Hi, I'm</h1>
         <h1 class="name">Luc Francis</h1>
         <p id="bio">
-            I'm a 16 year old frontend web developer most proficient in React. I
+            I'm a {age} year old frontend web developer most proficient in React. I
             am always looking to improve as a developer, and I am constantly
             picking up new frameworks and technologies.
         </p>

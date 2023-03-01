@@ -11,6 +11,7 @@ import vite from './images/vite.png';
 import html from './images/html.svg';
 import css from './images/css.png';
 import typesense from './images/typesense.svg';
+import tailwind from './images/tailwind.png';
 
 export const technologies = [
     {
@@ -62,6 +63,11 @@ export const technologies = [
         img: typesense,
         name: 'Typesense',
         url: 'https://typesense.org/'
+    },
+    {
+        img: tailwind,
+        name: 'TailwindCSS',
+        url: 'https://tailwindcss.com/'
     }
 ];
 
