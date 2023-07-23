@@ -38,7 +38,7 @@
 
     .technologiesDiv {
         display: flex;
-        gap: 8rem;
+        gap: 1rem;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;

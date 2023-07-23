@@ -8,11 +8,11 @@
   <div class="section">
     <Info />
   </div>
-  <div class="section" style="background-color: #303030">
-    <Technologies />
-  </div>
   <div class="section" style="background-color: #191919">
     <Projects />
+  </div>
+  <div class="section" style="background-color: #303030">
+    <Technologies />
   </div>
 </main>
 

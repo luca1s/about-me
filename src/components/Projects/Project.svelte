@@ -10,14 +10,15 @@
     <h2>
         {project.name}
     </h2>
-    <p>Status: {project.status}</p>
     {#if project.thumbnail}
         <img src={project.thumbnail} class="thumbnail" alt="thumbnail" />
     {/if}
     <p>{project.description}</p>
-    {#each project.technologies as technology}
-        <img src={technology} class="technologyImg" alt="technology" />
-    {/each}
+    <div class="imageContainer">
+        {#each project.technologies as technology}
+            <img src={technology} class="technologyImg" alt="technology" />
+        {/each}
+    </div>
     <br />
     {#if project.link}
         <a href={project.link}>Visit</a>
@@ -64,5 +65,13 @@
 
     .thumbnail {
         width: 100%;
+    }
+
+    .imageContainer {
+        display: flex;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 </style>

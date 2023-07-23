@@ -12,6 +12,8 @@ import html from './images/html.svg';
 import css from './images/css.png';
 import typesense from './images/typesense.svg';
 import tailwind from './images/tailwind.png';
+import openai from './images/openai.png';
+import maplibre from './images/maplibre.png';
 
 export const technologies = [
     {
@@ -42,7 +44,7 @@ export const technologies = [
     {
         img: react,
         name: "React",
-        url: "https://reactjs.org/",
+        url: "https://react.dev/",
     },
     {
         img: svelte,
@@ -68,34 +70,41 @@ export const technologies = [
         img: tailwind,
         name: 'TailwindCSS',
         url: 'https://tailwindcss.com/'
+    },
+    {
+        img: openai,
+        name: 'OpenAI',
+        url: 'https://openai.com/'
+    },
+    {
+        img: maplibre,
+        name: 'MapLibre',
+        url: 'https://maplibre.org/'
     }
 ];
 
 export const projects = [
     {
         name: "StudyState",
-        status: "Active",
         featured: true,
         description:
             "A website for students to create, share and study, created as a free and lightweight alternative to Quizlet.  ",
         thumbnail: studystate,
-        technologies: [firebase, react, mui, typesense],
+        technologies: [firebase, react, mui, typesense, openai, vite],
         link: "https://studystate.net",
     },
     {
         name: "OpenCanvas",
-        status: "Finished - Abandoned",
         description:
             "A realtime, collaborative whiteboard site created using vanilla JS, Firebase and Bootstrap",
         thumbnail: opencanvas,
-        technologies: [firebase, bootstrap]
+        technologies: [firebase, bootstrap, html, js]
     },
     {
         name: "OuiChat",
-        status: "Finished - Abandoned",
         description:
             "A realtime chat app with notifications created using vanilla JS, Firebase and Bootstrap",
         thumbnail: ouichat,
-        technologies: [firebase, bootstrap]
+        technologies: [firebase, bootstrap, html, js]
     },
 ];
