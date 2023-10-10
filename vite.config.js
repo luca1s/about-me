@@ -1,16 +1,11 @@
 import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
-import { VitePWA } from 'vite-plugin-pwa'
+import react from '@vitejs/plugin-react'
+import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    VitePWA({
-      registerType: 'autoUpdate',
-      workbox: {
-        globPatterns: ['**/*.{js,css,html,png,svg,jpg}']
-      }
-    }),
-    svelte()
-  ],
+  plugins: [react()],
+  resolve: {
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }]
+  }
 })
