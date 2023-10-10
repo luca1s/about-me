@@ -1,8 +1,8 @@
 import { FaLinkedin, FaGithubSquare, FaEnvelope } from 'react-icons/fa';
 
-export default function Contact() {
+export default function Contact({ reference }) {
     return (
-        <div className="h-screen dark:bg-gray-900">
+        <div className="h-screen dark:bg-gray-900" ref={reference}>
             <div className="flex justify-center items-center flex-col gap-4 h-full">
                 <h1 className="text-7xl text-gray-200">Contact me</h1>
                 <div className="flex items-center flex-row gap-3">

@@ -1,6 +1,6 @@
 import pfp from '@/images/pfp2.jpeg';
 
-export default function Info() {
+export default function Info({ scrollContact }) {
     const diff = new Date() - new Date("2006-03-13");
     const age = Math.floor(diff / 31536000000);
 
@@ -24,6 +24,9 @@ export default function Info() {
                     am always looking to improve as a developer, and I am constantly
                     picking up new frameworks and technologies.
                 </p>
+                <button className="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md" onClick={scrollContact}>
+                    Contact Me
+                </button>
             </div>
         </div>
     )
