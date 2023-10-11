@@ -1,54 +1,54 @@
 export const skills = [
     {
         name: "HTML",
-        experience: "7 years"
+        startYear: 2016
     },
     {
         name: "CSS",
-        experience: "7 years"
+        startYear: 2016
     },
     {
         name: "JavaScript",
-        experience: "7 years"
+        startYear: 2016
     },
     {
         name: "Node.js",
-        experience: "5 years"
+        startYear: 2018
     },
     {
         name: "React",
-        experience: "3 years"
+        startYear: 2020
     },
     {
         name: "Vite",
-        experience: "1 year"
+        startYear: 2022
     },
     {
         name: "Svelte",
-        experience: "1 year"
+        startYear: 2022
     },
     {
         name: "Firebase",
-        experience: "6 years"
+        startYear: 2017
     },
     {
         name: "TailwindCSS",
-        experience: "1 year"
+        startYear: 2022
     },
     {
         name: "Material UI",
-        experience: "2 years"
+        startYear: 2020
     },
     {
         name: "Typesense",
-        experience: "1 year"
+        startYear: 2022
     },
     {
-        name: "OpenAI",
-        experience: "1 year"
+        name: "OpenAI (Node.js API)",
+        startYear: 2022
     },
     {
-        name: "MapLibre",
-        experience: "1 year"
+        name: "MapLibre (JS)",
+        startYear: 2020
     }
 ]
