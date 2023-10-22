@@ -1,10 +1,10 @@
 import { skills } from "@/data/skills"
 
-export default function Skills() {
+export default function Skills({ reference }) {
     const currentYear = new Date().getFullYear();
 
     return (
-        <div className="h-max dark:bg-black p-4">
+        <div className="h-max dark:bg-black p-4" ref={reference}>
             <div className="flex items-center flex-col h-full">
                 <h1 className="text-4xl text-white">Skills</h1>
                 <div className="flex flex-wrap justify-center max-w-full p-4 gap-4">

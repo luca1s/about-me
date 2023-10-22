@@ -1,11 +1,11 @@
 import pfp from '@/images/pfp2.jpeg';
 
-export default function Info({ scrollContact }) {
+export default function Info({ reference }) {
     const diff = new Date() - new Date("2006-03-13");
     const age = Math.floor(diff / 31536000000);
 
     return (
-        <div className="h-screen dark:bg-gray-900">
+        <div className="h-screen dark:bg-gray-900" ref={reference}>
             <div className="flex justify-center items-center flex-col gap-4 h-full">
                 <img src={pfp} alt="pfp" className="rounded-md h-1/3 mt-2" />
                 <div className="text-center flex items-center gap-2">
@@ -24,9 +24,6 @@ export default function Info({ scrollContact }) {
                     am always looking to improve as a developer, and I am constantly
                     picking up new frameworks and technologies.
                 </p>
-                <button className="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md" onClick={scrollContact}>
-                    Contact Me
-                </button>
             </div>
         </div>
     )
