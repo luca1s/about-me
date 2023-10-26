@@ -1,8 +1,10 @@
 import { FaLinkedin, FaGithubSquare, FaEnvelope } from 'react-icons/fa';
 
 export default function Contact({ reference }) {
+    / * 3.5 rem is navbar height * /
+    
     return (
-        <div className="h-screen dark:bg-gray-900" ref={reference}>
+        <div className="h-screen dark:bg-gray-900" ref={reference} style={{ scrollMargin: "3.5rem" }}>
             <div className="flex justify-center items-center flex-col gap-4 h-full">
                 <h1 className="text-7xl text-gray-200">Contact me</h1>
                 <div className="flex items-center flex-row gap-3">

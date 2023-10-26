@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <nav className="bg-blue-900 p-4 sticky top-0">
+      <nav className="bg-blue-900 p-4 sticky top-0 h-14	">
         <div className="flex justify-between items-center">
           <div className="flex space-x-4">
             <a onClick={scrollAbout} className="text-white hover:text-blue-300">About Me</a>
