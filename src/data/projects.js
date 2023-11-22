@@ -21,13 +21,13 @@ export const projects = [
     {
         name: "OuiChat (completed)",
         description: "An experimental encrypted messaging webapp with push notifications. The site was completed in early 2021, and is no longer published.",
-        technologies: ["HTML", "JavaScript", "CSS", "Firebase"],
+        technologies: ["HTML", "JavaScript", "Node.js", "CSS", "Firebase"],
         image: ouichat
     },
     {
         name: "OpenCanvas (completed)",
         description: "A collaborative, online whiteboard with support for rich content (images, sketches, etc.). This site was an experiment completed in late 2021, and is no longer published.",
-        technologies: ["HTML", "JavaScript", "Node.js", "CSS", "Firebase"],
+        technologies: ["HTML", "JavaScript", "CSS", "Firebase"],
         image: opencanvas
     }
 ]
