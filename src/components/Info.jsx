@@ -7,7 +7,7 @@ export default function Info({ reference }) {
     / * 3.5 rem is navbar height * /
 
     return (
-        <div className="h-screen dark:bg-gray-900" ref={reference} style={{ scrollMargin: "3.5rem" }}>
+        <div className="h-screen bg-gray-900" ref={reference} style={{ scrollMargin: "3.5rem" }}>
             <div className="flex justify-center items-center flex-col gap-4 h-full">
                 <img src={pfp} alt="pfp" className="rounded-md h-1/3 mt-2" />
                 <div className="text-center flex items-center gap-2">
