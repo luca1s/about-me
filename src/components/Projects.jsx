@@ -6,7 +6,7 @@ export default function Projects({ reference }) {
     return (
         <div className="h-max bg-slate-950 p-4" ref={reference} style={{ scrollMargin: "3.5rem" }}>
             <div className="flex items-center flex-col h-full">
-                <h1 className="text-4xl text-white">Projects</h1>
+                <h1 className="text-4xl text-white">Projects + Experience</h1>
                 <div className="flex flex-wrap justify-center max-w-full p-4 gap-4">
                     {projects.map(project =>
                         <div key={project.name} className="outline outline-blue-500/50 w-96 p-2 rounded-md flex flex-col gap-2">
