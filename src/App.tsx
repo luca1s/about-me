@@ -17,10 +17,10 @@ export default function App() {
           <p className="text-xl text-gray-300">Software Engineer & Private Pilot</p>
           <div className="flex justify-center items-center gap-3">
             <a
-              href="mailto:lucajfrancis@gmail.com"
+              href="mailto:luc@luca1s.tech"
               className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
             >
-              <span>lucajfrancis@gmail.com</span>
+              <span>luc@luca1s.tech</span>
             </a>
             <a
               href="https://github.com/luca1s"
