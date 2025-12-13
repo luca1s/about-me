@@ -1,4 +1,5 @@
 import pfp from "./images/pfp2.jpeg";
+import { FaGithub, FaEnvelope } from 'react-icons/fa';
 
 const links = [
   {
@@ -20,11 +21,11 @@ const links = [
 
 const overflowLinks = [
   {
-    title: "GitHub",
+    icon: <FaGithub size={24} />,
     link: "https://github.com/luca1s"
   },
   {
-    title: "Email",
+    icon: <FaEnvelope size={24} />,
     link: "mailto:luc@luca1s.tech"
   }
 ]
@@ -45,7 +46,7 @@ export default function App() {
           <p className="text-gray-400 text-xs font-light">Portland, ME</p>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex flex-col gap-3 mb-3 max-w-sm mx-auto">
+      <div className="w-full md:w-1/2 flex flex-col gap-2 mb-2 max-w-sm mx-auto">
         {links.map((item, index) => <a
           key={index}
           href={item.link}
@@ -62,9 +63,9 @@ export default function App() {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 block border border-gray-800 text-white rounded-lg p-2 hover:bg-blue-600 transition"
+            className="flex-1 border border-gray-800 text-white rounded-lg p-2 hover:bg-blue-600 transition flex flex-row items-center justify-center"
           >
-            <h2 className="font-semibold">{item.title}</h2>
+            {item.icon}
           </a>)}
         </div>
       </div>
